@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReabilitaMe</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="./js/nav_hamburguer.js"></script>
+</head>
+
+<body>
+    
+    <header class="header">
+        <nav class="navbar">
+            <img src="./assets/ReabilitaMe_bg.png" alt="">
+            <ul>    
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre o App</a></li>
+                <li><a href="#planos">Plano</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="./login.html" class="login">LOGIN</a></li>
+            </ul>
+            </div>
+        </nav>
+        <div class="hamburguer">
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" id="closebtn"class="closebtn" onclick="closeNav()" on>&times;</a>
+                <div class="overlay-content">
+                    <a href="#home">Home</a>
+                    <a href="#sobre">Sobre o App</a>
+                    <a href="#planos">Plano</a>
+                    <a href="#contato">Contato</a>
+                    <a href="./login.html" class="login">LOGIN</a>
+                </div>
+            </div>
+            <div class="nav2">
+                <button class="nav-button" onclick="openNav()">
+                    <img src="./assets/menu-hamburguer.png" alt="">
+                </button>  
+                <img src="./assets/ReabilitaMe_bg.png" alt="" class="nav2_logo">
+            </div>
+    </header>
+
+    <div id="home" class="section home">
+        <div class="home-content">
+            <div class="home-text">
+                <h1>Bem-vindo ao ReabilitaMe App de Fisioterapia</h1>
+                <p>Seu parceiro para uma vida saudável. Agende consultas online e presenciais, acesse exames, acompanhamentos personalizados por profissionais parceiros e muito mais!</p>
+                <button><a href="#planos">Saiba Mais</a></button>
+            </div>
+            <div class="home-logo">
+                <img src="./assets/plano.png" alt="Logo do App de Fisioterapia">
+            </div>
+        </div>
+    </div>
+
+    <section>
+
+        <div id="sobre" class="section">
+            <div class="sobre-texto">
+            <h2>Sobre o Aplicativo</h2>
+            <p>Sobre o Aplicativo
+                Bem-vindo ao nosso aplicativo de fisioterapia! Este aplicativo foi desenvolvido para oferecer suporte e acompanhamento especializado em fisioterapia diretamente no conforto da sua casa. Nossa missão é ajudar você a alcançar uma vida mais saudável e ativa por meio de sessões de fisioterapia personalizadas, marcação de consultas online, acesso a exames e muito mais. <br><br>
+                
+                Estamos em fase inicial de desenvolvimento tanto do aplicativo quanto do site, mas estamos trabalhando arduamente para trazer a melhor experiência possível para nossos usuários. Sua opinião é muito importante para nós e será fundamental para melhorarmos continuamente nossos serviços. <br><br>
+                
+                Fique atento para mais novidades e atualizações que estão por vir!</p>
+            </div>
+        </div>
+
+        <div id="planos" class="section">
+            <h2>Nosso Plano</h2>
+            <div class="planos-grid">
+                <div class="plano">
+                    <img src="./assets/plano.png" alt="">
+                    <h2>Plano ReabilitaMe</h2><br>
+                    <p>O Plano ReabilitaMe oferece tudo o que você precisa para um cuidado completo em fisioterapia. Com ele, você pode: Marcar consultas online e presenciais, obter exames, ter acompanhamento personalizado de um profissional, conteúdos exclusivos de fisioterapia e muito mais.</p>
+                    <br>
+                    <p>Assine o Plano ReabilitaMe e tenha todo o suporte necessário para uma recuperação eficiente e uma vida mais saudável!</p>
+                    <button><a href="#">Assinar Plano</a></button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer id="contato">
+        <div class="footer-container">
+            <div class="footer-section contato">
+                <h3>Contato</h3>
+                <p><i class="fas fa-envelope"></i> Email: contato@reabilitameapp.com</p>
+                <p><i class="fas fa-phone"></i> Telefone: (85) 91234-5678</p>
+            </div>
+            <div class="footer-section localizacao">
+                <h3>Localização</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Av. Yolanda Pontes Vidal Queiroz, 101 - Maracanaú, CE</p>
+                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15922.85681857818!2d-38.6146389!3d-3.8713512!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c75379c03a8071%3A0x3d74817745e17039!2sUNINASSAU%20-%20Maracana%C3%BA!5e0!3m2!1spt-BR!2sbr!4v1716148676976!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="footer-section desenvolvedor">
+                <p>Desenvolvido por <a href="https://www.instagram.com/joaovitoor_aq/" >João Vitor</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

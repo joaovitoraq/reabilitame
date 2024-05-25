@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --dark-color: #202020;
+    --light-gray: #dedede;
+    --light-color: #fff;
+    --poppins-font: 'Poppins', sans-serif;
+    --transition: all 0.3s ease-in-out;
+    --box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.2)!important;
+    --box-shadow2: 0 0 6px 2px rgba(255, 255, 255, 0.3)!important;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    transition: 0.5s;
+    font-size: 10px;
+}
+
+body{
+    font-size: 1.6rem;
+    height: 100vh;
+    font-family: var(--poppins-font);
+}
+img{
+    width: 100%;
+    display: block;
+}
+
+a{
+    list-style: none;
+    text-decoration: none;
+    color: #202020;
+}
+
+/* ------------ */
+header nav{
+    background-color: white;
+    padding: 8px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav img{
+    margin-left: 40px;
+    max-width: 150px;
+}
+header nav ul{
+    margin-right: 10px;
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li{
+    padding: 5px 10px;
+}
+
+header nav ul li a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    list-style: none;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 250ms linear 0s;
+    position: relative;
+}
+
+/* INICIO NAV2 HAMBURGUER */
+.hamburguer{
+    background-color: #fff;
+    display: none;
+}
+
+.nav-button{
+    border: 0;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: rgba(0, 100, 0, 0.7);
+    margin: 8px;
+    cursor: pointer;
+    width: 42px;
+}
+
+.overlay{
+    width: 0%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 9;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    transition: all 0.5s;
+}
+
+.overlay-content{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.nav2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav2_logo{
+    max-width: 140px;
+}
+
+.overlay a{
+    padding: 8px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    font-size: 34px;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus{
+    color: #008000;
+}
+
+.overlay .closebtn{
+    position: fixed;
+    top: 25px;
+    right: 45px;
+    font-size: 60px;
+    display: none;
+    transition: 0.5s;
+}
+/* FIM NAV2 HAMBURGUER */
+.login{
+    color: #fff;
+    padding: 8px 30px;
+    margin-left: 4px;
+    background-color: #202020;
+    border-radius:50px;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s linear;
+}
+
+.login:hover{
+    color: #202020;
+    background-color: #CEF69B;
+    box-shadow: var(--box-shadow)
+}
+
+header nav ul li a:hover {
+    font-size: 17px;
+
+}
+
+
+h1{
+    width: 100%;
+    color: white;
+}
+
+
+
+/* -------------- */
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.home {
+    height: 100vh;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.home-text {
+    max-width: 50%;
+    text-align: left;
+}
+
+.home-logo img {
+    max-width: 100%;
+}
+
+.home h1 {
+    color: #008000;
+    font-size: 3.4rem;
+    margin-bottom: 20px;
+}
+
+.home p {
+    width: 80%;
+    text-align: left;
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+
+.home button {
+    padding: 10px 20px;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.home button a{
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.home button:hover {
+    background: #0056b3;
+}
+
+#sobre{
+    background-image: url(../assets/fundo.png);
+    background-size: cover;
+    z-index: -1;
+    height: 80vh;
+    display: flex;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.sobre-texto{
+    color: #fff;
+    text-align: center;
+    width: 50%;
+}
+
+#sobre img{
+    margin: 30px;
+    width: 40%;
+    max-width: 400px;
+}
+
+#sobre p{
+    width: 100%;
+    text-align: center;
+}
+
+#planos{
+    width: 100%;
+    height: 135vh;
+    background-image: url(../assets/fundo3.png);
+    background-size: cover;
+    z-index: 20px 0;
+}
+
+.planos-grid {
+    width: 1250px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.plano {
+    background: #fff;
+    padding: 25px;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    margin: 10px;
+}
+
+.plano img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.plano h3 {
+    margin-bottom: 10px;
+}
+
+.plano p {
+    margin-bottom: 20px;
+    min-height: 100px; 
+}
+.plano a{
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+
+.plano button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.plano button:hover {
+    background: #0056b3;
+}
+
+
+/*====== FOOTER ======*/
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+    min-width: 250px;
+}
+
+.footer-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: #00ff88;
+}
+
+.footer-section p {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    margin: 5px 0;
+}
+
+.footer-section a {
+    color: #00ff88;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #fff;
+}
+
+
+.footer-section .mapa {
+    width: 100%;
+    height: 200px;
+    border: 0;
+    border-radius: 10px;
+}
+
+.footer-section i {
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 1024px) {
+    
+    .home {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .home-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-text {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .home-logo img {
+        max-width: 80%;
+        margin-top: 20px;
+    }
+
+    .home h1 {
+        font-size: 2.8rem; /* Ajuste do tamanho da fonte */
+        margin-bottom: 20px;
+    }
+
+    .home p {
+        width: 100%;
+        font-size: 1.5rem; /* Ajuste do tamanho da fonte */
+        margin-bottom: 20px;
+    }
+
+    .home button {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+
+    .sobre-texto {
+        width: 80%;
+    }
+
+    .plano {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    header nav img {
+        margin-left: 10px;
+        max-width: 80px;
+    }
+
+    .home{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .home img{
+        max-width: 500px;
+    }
+
+    .home h1 {
+        text-align: left;
+        font-size: 2.3rem;
+    }
+
+    .home p {
+        text-align: justify;
+        font-size: 1.4rem;
+    }
+
+    .home button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    .home-text{
+        text-align: left;
+    }
+
+    #sobre{
+        height: 100vh;
+    }
+
+    .sobre-texto {
+        width: 90%;
+    }
+
+    .plano {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    footer iframe {
+        width: 90%;
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .hamburguer{
+        display: block;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .home{
+        padding-top: 6rem;
+        height: 90vh;
+    }
+    .home h1 {
+        font-size: 2.4rem;
+    }
+
+    .home p {
+        font-size: 1.4rem;
+    }
+
+    .home button {
+        font-size: 1rem;
+    }
+
+    .sobre-texto {
+        width: 80%;
+    }
+
+    .plano {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .mapa{
+        width: 90%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-section {
+        margin: 10px 0;
+    }
+}
+
+
+@media (max-width: 380px){
+    #sobre{
+        height: 120vh;
+    }
+}

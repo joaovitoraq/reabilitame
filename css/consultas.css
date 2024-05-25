@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --dark-color: #202020;
+    --light-gray: #dedede;
+    --light-color: #fff;
+    --poppins-font: 'Poppins', sans-serif;
+    --transition: all 0.3s ease-in-out;
+    --box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.2)!important;
+    --box-shadow2: 0 0 6px 2px rgba(255, 255, 255, 0.3)!important;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    transition: 0.5s;
+    font-size: 10px;
+}
+
+body{
+    background-color: #fafafa;
+    font-size: 1.6rem;
+    height: 100vh;
+    font-family: var(--poppins-font);
+}
+img{
+    width: 100%;
+    display: block;
+}
+
+a{
+    list-style: none;
+    text-decoration: none;
+    color: #202020;
+}
+
+/* ------------ */
+header nav{
+    background-color: white;
+    padding: 8px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav img{
+    margin-left: 40px;
+    max-width: 150px;
+}
+header nav ul{
+    margin-right: 10px;
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li{
+    padding: 5px 10px;
+}
+
+header nav ul li a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    list-style: none;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 250ms linear 0s;
+    position: relative;
+}
+
+a{
+    list-style: none;
+    text-decoration: none;
+    color: #202020;
+}
+
+
+header nav ul li a:hover {
+    font-size: 17px;
+}
+/* INICIO NAV2 HAMBURGUER */
+.hamburguer{
+    background-color: #fff;
+    display: none;
+}
+
+.nav-button{
+    border: 0;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: rgba(0, 100, 0, 0.7);
+    margin: 8px;
+    cursor: pointer;
+    width: 42px;
+}
+
+.overlay{
+    width: 0%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 9;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    transition: all 0.5s;
+}
+
+.overlay-content{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.nav2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav2_logo{
+    max-width: 140px;
+}
+
+.overlay a{
+    padding: 8px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    font-size: 34px;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus{
+    color: #008000;
+}
+
+.overlay .closebtn{
+    position: fixed;
+    top: 25px;
+    right: 45px;
+    font-size: 60px;
+    display: none;
+    transition: 0.5s;
+}
+/* FIM NAV2 HAMBURGUER */
+
+/* Adicione estas linhas para definir o ícone do menu hambúrguer */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-icon i {
+    font-size: 24px;
+    color: #202020;
+    padding: 10px;
+}
+
+/* Estilização específica para a nova página */
+
+.main-content {
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.consulta-section, .exames-section {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 40px;
+    background: var(--box-shadow2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+.consulta-section h2, .exames-section h2 {
+    color: #008000;
+    margin-bottom: 20px;
+    /* text-shadow: 0 0 0.2em #8F7 */
+}
+
+.consulta-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.consulta-form label {
+    color: #008000;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.consulta-form input::placeholder{
+    font-size: 1.23rem;
+    color: #008000;
+}
+
+.consulta-form input, .consulta-form select {
+    color: #008000;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.consulta-form button {
+    padding: 10px;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.consulta-form button:hover {
+    background: #0056b3;
+}
+
+.exames-section button {
+    margin-top: 8px;
+    padding: 10px;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.exames-section button:hover {
+    background: #0056b3;
+}
+
+/*====== FOOTER ======*/
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+    min-width: 250px;
+}
+
+.footer-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: #00ff88;
+}
+
+.footer-section p {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    margin: 5px 0;
+}
+
+.footer-section a {
+    color: #00ff88;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #fff;
+}
+
+.footer-section .mapa {
+    width: 100%;
+    height: 200px;
+    border: 0;
+    border-radius: 10px;
+}
+
+.footer-section i {
+    margin-right: 10px;
+}
+
+/* ==== FIM DO FOOTER ==== */
+.success-message {
+    background: #e0ffe0;
+    color: #008000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    text-align: left;
+}
+
+.success-message h3 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.success-message p {
+    margin-bottom: 5px;
+    font-size: 1.4rem;
+}
+
+
+
+@media (max-width: 660px) {
+    .hamburguer{
+        display: block;
+    }
+    .navbar{
+        display: none;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contato{
+        margin: 0;
+    }
+
+    footer iframe {
+        margin: 10px auto;
+        width: 90%;
+        height: 250px;
+    }
+
+    .nav-button {
+        width: 48px;
+        height: 48px;
+        padding: 8px;
+        background-color: rgba(0, 100, 0, 0.7);
+    }
+
+    .nav-button img {
+        width: 100%;
+        height: auto;
+    }
+
+    .nav2_logo{
+        width: 95px;
+    }
+
+    .main-content{
+        margin-top: 4.6rem;
+        height: 120vh;
+    }
+
+    .consulta-form input::placeholder{
+        font-size: 1.05rem;
+        color: #008000;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        padding: 20px;
+    }
+
+    .consulta-section, .exames-section {
+        width: 100%;
+    }
+}
