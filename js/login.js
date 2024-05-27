@@ -10,7 +10,7 @@ document.getElementById("btn-login").addEventListener("click", function(event) {
     const senhaTeste = "123456";
 
     if (usuario === usuarioTeste && senha === senhaTeste) {
-        window.location.href = "./consultas.html";
+        window.location.href = "./portal_usuario.html";
     } else {
         errorMessage.style.display = "block";
     }

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos sobre Fisioterapia</title>
+    <link rel="stylesheet" href="./css/videos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="./js/nav_hamburguer.js"></script>
+    <script src="./js/videos.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="./assets/ReabilitaMe_bg.png" alt="">
+            <ul>     
+                <li><a href="./index.html#home">Home</a></li>
+                <li><a href="./index.html#sobre">Sobre o App</a></li>
+                <li><a href="./index.html#planos">Plano</a></li>
+                <li><a href="./index.html#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="hamburguer">
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" id="closebtn" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="./index.html#home">Home</a>
+                    <a href="./index.html#sobre">Sobre o App</a>
+                    <a href="./index.html#planos">Plano</a>
+                    <a href="./index.html#contato">Contato</a>
+                </div>
+            </div>
+            <div class="nav2">
+                <button class="nav-button" onclick="openNav()">
+                    <img src="./assets/menu-hamburguer.png" alt="">
+                </button>
+                <img src="./assets/plano.png" alt="" class="nav2_logo">
+            </div>
+    </header>
+</header>
+<section class="videos-section">
+    <div class="portal-container">
+        <h1>Vídeos sobre Fisioterapia</h1>
+        <div class="accordion-container">
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">Exercícios</div>
+                    <div class="accordion-content">
+                        <iframe src="https://www.youtube.com/embed/BQPkzKi5QuY?si=RnrKfFydokqP3w2W" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/dLheZmdjMiY?si=0gEXdO6VAZRTUOg4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">Alongamentos</div>
+                    <div class="accordion-content">
+                        <iframe src="https://www.youtube.com/embed/Hpq3AyG-OAE?si=R5a4kmiK63t5z_R8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/Sls8Gh3qap4?si=YvWyZHMMAEyKhV1p" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <footer id="contato">
+        <div class="footer-container">
+            <div class="footer-section contato">
+                <h3>Contato</h3>
+                <p><i class="fas fa-envelope"></i> Email: contato@reabilitameapp.com</p>
+                <p><i class="fas fa-phone"></i> Telefone: (85) 91234-5678</p>
+            </div>
+            <div class="footer-section localizacao">
+                <h3>Localização</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Av. Yolanda Pontes Vidal Queiroz, 101 - Maracanaú, CE</p>
+                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15922.85681857818!2d-38.6146389!3d-3.8713512!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c75379c03a8071%3A0x3d74817745e17039!2sUNINASSAU%20-%20Maracana%C3%BA!5e0!3m2!1spt-BR!2sbr!4v1716148676976!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="footer-section desenvolvedor">
+                <p>Desenvolvido por <a href="https://www.instagram.com/joaovitoor_aq/" >João Vitor</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

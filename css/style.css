@@ -508,7 +508,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 660px) {
+@media only screen and (max-width: 768px) {
     .hamburguer{
         display: block;
     }
@@ -558,7 +558,12 @@ footer {
 
 
 @media (max-width: 380px){
+
+    .home{
+        height: 110vh;
+    }
+
     #sobre{
-        height: 120vh;
+        height: 125vh;
     }
 }
